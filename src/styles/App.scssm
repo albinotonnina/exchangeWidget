@@ -1,0 +1,81 @@
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color: $text_color;
+  font-family: $font_family;
+  font-size: 16px;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+input, textarea {
+  font-family: $font_family;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: button;
+}
+
+[type=reset]:focus, [type=submit]:focus, button:focus, html [type=button]:focus, input:focus {
+  outline: 0;
+}
+
+body {
+  margin: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h1{
+  font-weight: 100;
+  font-size: $space-sm;
+  margin-top: $space-sm;
+  margin-bottom: $space-xs;
+  line-height: $space-sm;
+}
+
+h2{
+  font-weight: 100;
+  font-size: $space-sm;
+  line-height: $space-sm;
+  margin-top: 0;
+  margin-bottom: $space-xs / 2;
+}
+
+.container {
+  max-width: $space-xxl;
+  padding: 0 $space-sm;
+  margin: auto;
+}

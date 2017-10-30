@@ -1,0 +1,20 @@
+@import '../styles/variables';
+
+.TextField{
+  margin: $space-md 0;
+  min-height: $space-md * 2;
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer{
+  position: relative;
+  width: 100%;
+}
+
+.input{
+  width: 100%;
+  font-weight: 300!important;
+  padding: 0;
+  text-align: left;
+}

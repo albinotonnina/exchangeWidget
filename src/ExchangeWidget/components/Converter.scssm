@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  align-content: center;
+
+  > * {
+
+    &:first-child {
+      margin-right: $space-sm
+    }
+
+    flex: 1 1 50%;
+  }
+}
+
+.section {
+  margin-top: $space-sm;
+}
+
+.centered {
+  text-align: center;
+}
+
+.footer {
+  margin-top: $space-md;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

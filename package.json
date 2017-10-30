@@ -1,0 +1,79 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Exchange Widget",
+  "main": "./build/umd/umd.js",
+  "react-scv": {
+    "appBuildEntry": "src/index.js",
+    "umdBuildEntry": "src/module/index.js",
+    "html": {
+      "title": "Exchange",
+      "description": "A React/Redux experiment"
+    },
+    "devServer": {
+      "port": "3000"
+    }
+  },
+  "scripts": {
+    "build": "react-scv build",
+    "start": "react-scv start",
+    "autoformat": "standard --fix",
+    "test": "standard && jest",
+    "test:debug": "node --inspect-brk ./node_modules/react-scv/bin/react-scv test --runInBand",
+    "postinstall": "react-scv dll"
+  },
+  "keywords": ["react"],
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.1.0",
+    "enzyme-adapter-react-15": "1.0.2",
+    "jest": "21.2.1",
+    "jest-styled-components": "4.9.0",
+    "react-scv": "0.0.7",
+    "react-test-renderer": "16.0.0",
+    "standard": "10.0.3"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "identity-obj-proxy": "3.0.0",
+    "isomorphic-fetch": "2.2.1",
+    "prop-types": "^15.6.0",
+    "react": "15.4.2",
+    "react-addons-test-utils": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-interval": "^2.0.2",
+    "react-redux": "5.0.6",
+    "react-refetch": "1.0.1",
+    "redux": "3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "2.2.0",
+    "webfontloader": "1.6.28"
+  },
+  "jest": {
+    "rootDir": "./",
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "moduleFileExtensions": [
+        "js"
+      ],
+      "\\.(cssm|scssm|css)$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "testMatch": [
+      "**/?(*)(_test).js?(x)"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "/build/"
+    ]
+  }
+}

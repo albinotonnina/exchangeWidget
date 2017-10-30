@@ -1,0 +1,31 @@
+.RoundFlag {
+
+}
+
+.xs{
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: .5rem!important;
+}
+
+.Flag {
+  width: 3rem;
+  height: 3rem;
+  transform: scale(.5);
+
+  transform-origin: top left;
+
+  background: url('../assets/flags-sprite.png') no-repeat;
+
+  &.gb {
+    background-position: 0 -3456px;
+  }
+
+  &.us {
+    background-position: 0 -9936px;
+  }
+
+  &.eu {
+    background-position: 0 -3072px;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.successIcon {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 2.25rem 0 2.25rem .2rem;
+  margin: 0 auto $space-sm;
+  border-radius: 50%;
+  border: 2px solid $primary_color;
+  display: flex;
+  justify-content: center;
+}
+
+.successMessage {
+  text-align: center;
+}
+
+.successReminder {
+  color: $secondary_color;
+  margin-bottom: $space-sm
+}

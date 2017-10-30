@@ -1,0 +1,19 @@
+@import '../styles/variables';
+
+.button {
+  color: $white;
+  background: $primary_color;
+  font-weight: 400;
+  width: 16rem;
+  height: $space-md;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: color .45s cubic-bezier(.23, 1, .32, 1), stroke .45s cubic-bezier(.23, 1, .32, 1), fill .45s cubic-bezier(.23, 1, .32, 1), opacity .45s cubic-bezier(.23, 1, .32, 1);
+  z-index: 0;
+  border-radius: 2rem;
+
+  &:disabled {
+    opacity: .2;
+    border: 0;
+  }
+}
