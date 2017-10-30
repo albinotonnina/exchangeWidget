@@ -29,6 +29,11 @@ Build the application.
 I used a tool made by my fellow colleague Marcello Montemagno. It's in its early stage but I like it and I like to contribute to it.
 For any extra info https://github.com/marcellomontemagno/react-scv
 
+# Features
+- Fetch rates every 10 seconds
+- Update balance (make transfer) when funds are enough
+- Change currency/amount bilaterally
+
 # TODO
 - Add more unit tests for logic
 - Add more tests in presentational components
