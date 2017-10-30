@@ -33,6 +33,7 @@ For any extra info https://github.com/marcellomontemagno/react-scv
 - Fetch rates every 10 seconds
 - Update balance (make transfer) when funds are enough
 - Change currency/amount bilaterally
+- [JavaScript style guide, with linter & automatic code fixer](https://standardjs.com) semicolon yes, semicolo no? :)
 
 # TODO
 - Add more unit tests for logic
