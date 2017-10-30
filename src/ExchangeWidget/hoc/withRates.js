@@ -27,7 +27,7 @@ export default function withRates (WrappedComponent) {
 
     render () {
       return <div>
-        <ReactInterval timeout={10000} enabled={false} callback={this.fetchRates} />
+        <ReactInterval timeout={10000} enabled={true} callback={this.fetchRates} />
         <WrappedComponent {...this.props}
         />
       </div>
