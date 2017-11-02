@@ -17,13 +17,15 @@
   },
   "scripts": {
     "build": "react-scv build",
-    "start": "react-scv start",
+    "dev": "react-scv start",
+    "start": "node web.js",
     "autoformat": "standard --fix",
     "test": "standard && jest",
-    "test:debug": "node --inspect-brk ./node_modules/react-scv/bin/react-scv test --runInBand",
-    "postinstall": "react-scv dll"
+    "test:debug": "node --inspect-brk ./node_modules/react-scv/bin/react-scv test --runInBand"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "devDependencies": {
     "babel-jest": "21.2.0",
     "babel-preset-env": "1.6.1",
@@ -33,12 +35,13 @@
     "enzyme-adapter-react-15": "1.0.2",
     "jest": "21.2.1",
     "jest-styled-components": "4.9.0",
-    "react-scv": "0.0.7",
+    "react-scv": "0.0.10",
     "react-test-renderer": "16.0.0",
     "standard": "10.0.3"
   },
   "dependencies": {
     "classnames": "2.2.5",
+    "express": "3.5.0",
     "identity-obj-proxy": "3.0.0",
     "isomorphic-fetch": "2.2.1",
     "prop-types": "^15.6.0",
