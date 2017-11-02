@@ -5,7 +5,7 @@ The actual code of the widget is in
 `/src/ExchangeWidget`
 Everything else is just a proto app / container with some HOC and UI components, the store, the reducers and the actions.
 
-(http://exchangetransfer.herokuapp.com/)[online demo]
+http://exchangetransfer.herokuapp.com
 
 ## Installation
 
