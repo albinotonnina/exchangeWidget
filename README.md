@@ -1,6 +1,8 @@
 # React/Redux experiment
 ## Exchange widget
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/albinotonnina/exchangeWidget.svg)](https://greenkeeper.io/)
+
 The actual code of the widget is in
 `/src/ExchangeWidget`
 Everything else is just a proto app / container with some HOC and UI components, the store, the reducers and the actions.
